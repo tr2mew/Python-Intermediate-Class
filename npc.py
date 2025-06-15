@@ -9,6 +9,7 @@ class NPC:
         print(f"HP: {self.hp}")
         print(f"Mana: {self.mana}")
         print("-"*20)
+<<<<<<< HEAD
         
     def damage(self, dmg):
         if self.mana <= 0:
@@ -17,12 +18,21 @@ class NPC:
         self.hp -= dmg
         self.mana -= dmg
         print(f"{self.name} HP got -{dmg}")
+=======
+    
+    def heal(self, heal):
+        self.hp += heal
+>>>>>>> Heal
 
 n1 = NPC("Alice", 100, 200)
 n2 = NPC("Mina", 200, 100)
 
 n1.describe()
+<<<<<<< HEAD
 n1.damage(10)
 n1.damage(10)
+=======
+n1.heal(20)
+>>>>>>> Heal
 n1.describe()
 n2.describe()
