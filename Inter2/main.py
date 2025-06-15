@@ -6,9 +6,12 @@ class Student:
         self.courses = courses
         self.pocket = pocket
 
+    def get_fullname(self):
+        fullname = f"{self.first_name} {self.last_name}"
+        return fullname
+    
     def display_info(self):
-        print("First Name:", self.first_name)
-        print("Last Name:", self.last_name)
+        print("Name:", self.get_fullname())
         print("Age:", self.age)
         print("Courses:", ", ".join(self.courses))
         print("Pocket money: ", self.pocket)
