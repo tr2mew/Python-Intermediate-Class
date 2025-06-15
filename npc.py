@@ -9,9 +9,14 @@ class NPC:
         print(f"HP: {self.hp}")
         print(f"Mana: {self.mana}")
         print("-"*20)
+    
+    def heal(self, heal):
+        self.hp += heal
 
 n1 = NPC("Alice", 100, 200)
 n2 = NPC("Mina", 200, 100)
 
+n1.describe()
+n1.heal(20)
 n1.describe()
 n2.describe()
