@@ -16,5 +16,8 @@ class Book :
 # Expected Output:
 # The Hobbit by J.R.R. Tolkien, 310 pages
 
-b = Book("The Hobbit", "J.R.R. Tolkien", 310)
-b.summary()
+b1 = Book("The Hobbit", "J.R.R. Tolkien", 310)
+b1.summary()
+
+b2 = Book("Peter Pan", "James Matthew Barrie", 240)
+b2.summary()
