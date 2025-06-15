@@ -1,0 +1,16 @@
+class NPC:
+    def __init__(self, name, hp, mana):
+        self.name = name
+        self.hp = hp
+        self.mana = mana
+    
+    def describe(self):
+        print(f"Name: {self.name}")
+        print(f"HP: {self.hp}")
+        print(f"Mana: {self.mana}")
+
+n1 = NPC("Alice", 100, 150)
+n2 = NPC("Mina", 200, 100)
+
+n1.describe()
+n2.describe()
